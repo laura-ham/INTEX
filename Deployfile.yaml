@@ -1,0 +1,15 @@
+version: 2
+
+project:
+  name: "customer-profile-api"
+  type: "ecs"
+  infra_repo:
+    uri: "git@github.com:Yleisradio/yle-aws-yhteiset.git"
+    dir: "terraform/customer-profile-api"
+
+environment:
+  ecs:
+    production:
+      DOCKER_ENV: "production"
+    test:
+      DOCKER_ENV: "test"

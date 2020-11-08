@@ -1,0 +1,7 @@
+version: "2"
+services:
+  fakes3:
+    image: lphoward/fake-s3
+    ports:
+      - "4569:4569"
+    restart: always
